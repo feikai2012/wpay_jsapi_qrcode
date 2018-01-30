@@ -36,7 +36,7 @@ $input->SetTotal_fee($prices);
 $input->SetTime_start(date("YmdHis"));
 $input->SetTime_expire(date("YmdHis", time() + 600));
 $input->SetGoods_tag("扫码商户支付");
-$input->SetNotify_url("http://www.youjiexunda.com/wxpay/notify.php");
+$input->SetNotify_url("http://www.test.com/wxpay/notify.php");
 $input->SetTrade_type("JSAPI");
 $input->SetOpenid($openId);
 $order = WxPayApi::unifiedOrder($input);
